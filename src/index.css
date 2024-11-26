@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: black;
+  overflow-x: hidden;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0066cc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0077ee;
+}
+
+/* Glowing text effect */
+.glow-text {
+  text-shadow: 0 0 10px rgba(0, 102, 255, 0.5),
+               0 0 20px rgba(0, 102, 255, 0.3),
+               0 0 30px rgba(0, 102, 255, 0.1);
+}
+
+/* Gradient animations */
+.gradient-animate {
+  background-size: 200% 200%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Futuristic border glow */
+.border-glow {
+  box-shadow: 0 0 10px rgba(0, 102, 255, 0.5),
+              inset 0 0 10px rgba(0, 102, 255, 0.5);
+}
+
+/* Hover effect for cards */
+.hover-card {
+  transition: all 0.3s ease;
+}
+
+.hover-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(0, 102, 255, 0.3);
+}
